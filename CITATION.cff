@@ -1,0 +1,42 @@
+cff-version: 1.2.0
+message: "If you use Lighthouse, please cite the article below and FQLite."
+title: "Lighthouse: cell site and CDR analysis plugin for FQLite"
+type: software
+authors:
+  - family-names: Pawlaszczyk
+    given-names: Dirk
+    orcid: "https://orcid.org/0000-0001-7485-7478"
+    affiliation: "Hochschule Mittweida"
+    email: pawlaszc@hs-mittweida.de
+repository-code: "https://github.com/pawlaszczyk/fqlite"
+url: "https://github.com/pawlaszczyk/lighthouse"
+license: Apache-2.0
+keywords:
+  - digital forensics
+  - cell site analysis
+  - call detail records
+  - ETSI TS 102 657
+  - text-to-SQL
+  - FQLite
+preferred-citation:
+  type: article
+  title: "AI-Assisted Cell Site Analysis: An Open Source Solution for Forensic Investigation of Call Detail Records"
+  authors:
+    - family-names: Pawlaszczyk
+      given-names: Dirk
+      orcid: "https://orcid.org/0000-0001-7485-7478"
+    - family-names: Labudde
+      given-names: Dirk
+    - family-names: Hummert
+      given-names: Christian
+    - family-names: Bodach
+      given-names: Ronny
+    - family-names: Engler
+      given-names: Philipp
+    - family-names: Kolouch
+      given-names: Jan
+    - family-names: Spranger
+      given-names: Michael
+  journal: "Science & Justice"
+  year: 2026
+  notes: "Submitted. Volume, pages and DOI will be added on publication."

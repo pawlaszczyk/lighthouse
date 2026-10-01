@@ -1,0 +1,110 @@
+{
+  "file": "lighthouse_etsi_cdr_HOLDOUT_C.json",
+  "sha256": "4023bebf7945eb32ecb4ea46792f40a61bd570d4b20576c29e8347b39ad937d0",
+  "created_utc": "2026-09-28T15:07:05+00:00",
+  "generator": "generate_etsi_cdr_holdout_c.py",
+  "seed": 4711,
+  "db": "case_merged_views.db",
+  "max_sim": 0.8,
+  "n_rows": 96,
+  "n_questions": 48,
+  "by_skill": {
+    "LOOKUP": 48,
+    "IDENT": 32,
+    "COUNT": 8,
+    "DATETIME": 8
+  },
+  "families": {
+    "C01_records_of_number_on_day": {
+      "skill": "LOOKUP",
+      "questions": 4,
+      "tries": 4,
+      "max_sim_to_any_prior_question": 0.73
+    },
+    "C02_count_records_of_number": {
+      "skill": "LOOKUP",
+      "questions": 4,
+      "tries": 4,
+      "max_sim_to_any_prior_question": 0.78
+    },
+    "C03_imsi_of_number": {
+      "skill": "IDENT",
+      "questions": 4,
+      "tries": 4,
+      "max_sim_to_any_prior_question": 0.59
+    },
+    "C04_imei_of_number": {
+      "skill": "IDENT",
+      "questions": 4,
+      "tries": 5,
+      "max_sim_to_any_prior_question": 0.75
+    },
+    "C05_number_of_imsi": {
+      "skill": "IDENT",
+      "questions": 4,
+      "tries": 4,
+      "max_sim_to_any_prior_question": 0.655
+    },
+    "C06_count_type_on_day": {
+      "skill": "COUNT",
+      "questions": 4,
+      "tries": 5,
+      "max_sim_to_any_prior_question": 0.737
+    },
+    "C07_first_or_last_record_of_number": {
+      "skill": "DATETIME",
+      "questions": 4,
+      "tries": 4,
+      "max_sim_to_any_prior_question": 0.75
+    },
+    "C08_apn_of_number": {
+      "skill": "IDENT",
+      "questions": 4,
+      "tries": 4,
+      "max_sim_to_any_prior_question": 0.62
+    },
+    "C09_numbers_active_on_day": {
+      "skill": "LOOKUP",
+      "questions": 4,
+      "tries": 8,
+      "max_sim_to_any_prior_question": 0.78
+    },
+    "C10_calls_of_number": {
+      "skill": "LOOKUP",
+      "questions": 4,
+      "tries": 4,
+      "max_sim_to_any_prior_question": 0.587
+    },
+    "C11_numbers_in_cell": {
+      "skill": "LOOKUP",
+      "questions": 4,
+      "tries": 4,
+      "max_sim_to_any_prior_question": 0.608
+    },
+    "C12_sms_of_number": {
+      "skill": "LOOKUP",
+      "questions": 4,
+      "tries": 4,
+      "max_sim_to_any_prior_question": 0.608
+    }
+  },
+  "rejected": {
+    "duplicate": 5,
+    "too_similar": 1
+  },
+  "compared_against": [
+    "lighthouse_etsi_cdr_training_dataset.json",
+    "lighthouse_etsi_cdr_targeted_train.json",
+    "lighthouse_etsi_cdr_paraphrase_train.json",
+    "lighthouse_etsi_cdr_HOLDOUT_EXTRA.json",
+    "lighthouse_etsi_cdr_HOLDOUT_V2.json",
+    "lighthouse_etsi_cdr_HOLDOUT_V2_LARGE.json",
+    "lighthouse_etsi_cdr_HOLDOUT_V3.json",
+    "lighthouse_etsi_cdr_HOLDOUT_V4.json"
+  ],
+  "frozen_before": [
+    "jeder Evaluation auf diesem Set",
+    "jeder weiteren Aenderung an Modell, Prompt oder Regeln"
+  ],
+  "usage_rule": "Nur fuer die Endauswertung verwenden."
+}

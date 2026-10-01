@@ -1,0 +1,119 @@
+{
+  "file": "lighthouse_etsi_cdr_HOLDOUT_V4.json",
+  "sha256": "1817b0daa290d80e3a3bde27d250cfbbeb250b178439a0e38dfa8387b6964926",
+  "created_utc": "2026-09-24T20:56:34Z",
+  "generator": "generate_etsi_cdr_paraphrase.py",
+  "seed": 4242,
+  "n_rows": 120,
+  "n_sql": 60,
+  "by_skill": {
+    "QUANTOR": 12,
+    "TIME": 12,
+    "DATETIME": 18,
+    "DAYS": 18,
+    "RANK": 10,
+    "PARTNER": 28,
+    "GAP": 4,
+    "COUNT": 12,
+    "GEO": 6
+  },
+  "split_rule": "Formulierungen 5-6 je Konzept und Sprache nur hier; Formulierungen 1-4 nur im Training",
+  "train_file": "lighthouse_etsi_cdr_paraphrase_train.json",
+  "train_rows": 320,
+  "concepts": {
+    "K01_only_before": {
+      "train": 4,
+      "holdout_v4": 3
+    },
+    "K02_at_least_once_after": {
+      "train": 4,
+      "holdout_v4": 3
+    },
+    "K03_night_window": {
+      "train": 4,
+      "holdout_v4": 3
+    },
+    "K04_day_window": {
+      "train": 4,
+      "holdout_v4": 3
+    },
+    "K05_last_hours": {
+      "train": 4,
+      "holdout_v4": 3
+    },
+    "K06_first_hours": {
+      "train": 4,
+      "holdout_v4": 3
+    },
+    "K07_first_last_on_day": {
+      "train": 4,
+      "holdout_v4": 3
+    },
+    "K08_first_last_active_day": {
+      "train": 4,
+      "holdout_v4": 3
+    },
+    "K09_days_exact_vs_min": {
+      "train": 4,
+      "holdout_v4": 3
+    },
+    "K10_topN_cells": {
+      "train": 4,
+      "holdout_v4": 3
+    },
+    "K11_nth_cell": {
+      "train": 4,
+      "holdout_v4": 2
+    },
+    "K12_directional_calls": {
+      "train": 0,
+      "holdout_v4": 2
+    },
+    "K12b_directional_duration": {
+      "train": 4,
+      "holdout_v4": 3
+    },
+    "K13_calls_either_direction": {
+      "train": 4,
+      "holdout_v4": 3
+    },
+    "K14_sms_sent_vs_received": {
+      "train": 4,
+      "holdout_v4": 3
+    },
+    "K15_common_vs_only_contacts": {
+      "train": 4,
+      "holdout_v4": 3
+    },
+    "K16_numbers_long_pause": {
+      "train": 4,
+      "holdout_v4": 2
+    },
+    "K17_calls_longer_minutes": {
+      "train": 4,
+      "holdout_v4": 3
+    },
+    "K18_geo_north_south": {
+      "train": 4,
+      "holdout_v4": 3
+    },
+    "K19_per_day_counts_number": {
+      "train": 4,
+      "holdout_v4": 3
+    },
+    "K20_contacts_count_kind": {
+      "train": 4,
+      "holdout_v4": 3
+    }
+  },
+  "rejected": {
+    "params_or_boundary": 951,
+    "duplicate_or_prior": 435,
+    "too_similar_to_holdouts": 53,
+    "empty": 21
+  },
+  "frozen_before": [
+    "Training mit lighthouse_etsi_cdr_paraphrase_train.json"
+  ],
+  "usage_rule": "Nur fuer die Endauswertung verwenden."
+}

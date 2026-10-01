@@ -1,0 +1,225 @@
+{
+  "file": "lighthouse_etsi_cdr_HOLDOUT_D.json",
+  "sha256": "1eaf5d1319482191dc8a9b1d8e6bc67e3ad21ac64096c074602cc3e2c127d384",
+  "created_utc": "2026-09-28T15:29:27+00:00",
+  "generator": "generate_basic_sets.py + basic_concepts.py",
+  "bank": "test",
+  "seed": 8080,
+  "max_sim": 0.8,
+  "n_rows": 144,
+  "n_questions": 72,
+  "by_skill": {
+    "LOOKUP": 36,
+    "COUNT": 18,
+    "IDENT": 36,
+    "DATETIME": 18,
+    "CELL": 18,
+    "PARTNER": 12,
+    "SOURCE": 6
+  },
+  "by_difficulty": {
+    "easy": 114,
+    "medium": 30
+  },
+  "families": {
+    "B01_records_of_number": {
+      "skill": "LOOKUP",
+      "difficulty": "easy",
+      "questions": 3,
+      "tries": 5,
+      "max_sim": 0.667
+    },
+    "B02_records_of_number_on_day": {
+      "skill": "LOOKUP",
+      "difficulty": "easy",
+      "questions": 3,
+      "tries": 3,
+      "max_sim": 0.65
+    },
+    "B03_count_records_of_number": {
+      "skill": "COUNT",
+      "difficulty": "easy",
+      "questions": 3,
+      "tries": 3,
+      "max_sim": 0.694
+    },
+    "B04_imsi_of_number": {
+      "skill": "IDENT",
+      "difficulty": "easy",
+      "questions": 3,
+      "tries": 3,
+      "max_sim": 0.72
+    },
+    "B05_imei_of_number": {
+      "skill": "IDENT",
+      "difficulty": "easy",
+      "questions": 3,
+      "tries": 3,
+      "max_sim": 0.706
+    },
+    "B06_number_of_imsi": {
+      "skill": "IDENT",
+      "difficulty": "easy",
+      "questions": 3,
+      "tries": 4,
+      "max_sim": 0.787
+    },
+    "B07_number_of_imei": {
+      "skill": "IDENT",
+      "difficulty": "easy",
+      "questions": 3,
+      "tries": 3,
+      "max_sim": 0.591
+    },
+    "B08_imei_of_imsi": {
+      "skill": "IDENT",
+      "difficulty": "easy",
+      "questions": 3,
+      "tries": 3,
+      "max_sim": 0.6
+    },
+    "B09_apn_of_number": {
+      "skill": "IDENT",
+      "difficulty": "easy",
+      "questions": 3,
+      "tries": 3,
+      "max_sim": 0.784
+    },
+    "B10_first_record": {
+      "skill": "DATETIME",
+      "difficulty": "easy",
+      "questions": 3,
+      "tries": 3,
+      "max_sim": 0.639
+    },
+    "B11_last_record": {
+      "skill": "DATETIME",
+      "difficulty": "easy",
+      "questions": 3,
+      "tries": 3,
+      "max_sim": 0.69
+    },
+    "B12_calls_of_number": {
+      "skill": "LOOKUP",
+      "difficulty": "easy",
+      "questions": 3,
+      "tries": 3,
+      "max_sim": 0.618
+    },
+    "B13_directed_calls_of_number": {
+      "skill": "LOOKUP",
+      "difficulty": "easy",
+      "questions": 3,
+      "tries": 7,
+      "max_sim": 0.769
+    },
+    "B14_sms_of_number": {
+      "skill": "LOOKUP",
+      "difficulty": "easy",
+      "questions": 3,
+      "tries": 3,
+      "max_sim": 0.676
+    },
+    "B15_gprs_of_number": {
+      "skill": "LOOKUP",
+      "difficulty": "easy",
+      "questions": 3,
+      "tries": 3,
+      "max_sim": 0.551
+    },
+    "B16_numbers_in_cell": {
+      "skill": "CELL",
+      "difficulty": "easy",
+      "questions": 3,
+      "tries": 11,
+      "max_sim": 0.677
+    },
+    "B17_records_in_cell_on_day": {
+      "skill": "CELL",
+      "difficulty": "easy",
+      "questions": 3,
+      "tries": 3,
+      "max_sim": 0.577
+    },
+    "B18_cells_of_number": {
+      "skill": "CELL",
+      "difficulty": "easy",
+      "questions": 3,
+      "tries": 5,
+      "max_sim": 0.643
+    },
+    "B19_numbers_active_on_day": {
+      "skill": "LOOKUP",
+      "difficulty": "easy",
+      "questions": 0,
+      "tries": 300,
+      "max_sim": null
+    },
+    "B20_count_type_on_day": {
+      "skill": "COUNT",
+      "difficulty": "easy",
+      "questions": 3,
+      "tries": 4,
+      "max_sim": 0.792
+    },
+    "B21_call_partners_directed": {
+      "skill": "PARTNER",
+      "difficulty": "medium",
+      "questions": 3,
+      "tries": 3,
+      "max_sim": 0.725
+    },
+    "B22_sms_partners_directed": {
+      "skill": "PARTNER",
+      "difficulty": "medium",
+      "questions": 3,
+      "tries": 4,
+      "max_sim": 0.714
+    },
+    "B23_source_explicit": {
+      "skill": "SOURCE",
+      "difficulty": "medium",
+      "questions": 3,
+      "tries": 3,
+      "max_sim": 0.593
+    },
+    "B24_records_of_number_time_window": {
+      "skill": "DATETIME",
+      "difficulty": "medium",
+      "questions": 3,
+      "tries": 4,
+      "max_sim": 0.579
+    },
+    "B25_call_duration": {
+      "skill": "COUNT",
+      "difficulty": "medium",
+      "questions": 3,
+      "tries": 3,
+      "max_sim": 0.784
+    }
+  },
+  "rejected": {
+    "too_similar": 7,
+    "sql_in_compared_set": 307,
+    "duplicate": 5,
+    "no_params": 1
+  },
+  "compared_against": [
+    "lighthouse_etsi_cdr_training_dataset.json",
+    "lighthouse_etsi_cdr_targeted_train.json",
+    "lighthouse_etsi_cdr_paraphrase_train.json",
+    "lighthouse_etsi_cdr_paraphrase_train_clean.json",
+    "lighthouse_etsi_cdr_HOLDOUT_EXTRA.json",
+    "lighthouse_etsi_cdr_HOLDOUT_V2.json",
+    "lighthouse_etsi_cdr_HOLDOUT_V2_LARGE.json",
+    "lighthouse_etsi_cdr_HOLDOUT_V3.json",
+    "lighthouse_etsi_cdr_HOLDOUT_V4.json",
+    "lighthouse_etsi_cdr_HOLDOUT_C.json"
+  ],
+  "frozen_before": [
+    "Erzeugung des V4-Trainingssatzes",
+    "V4-Training",
+    "jeder Auswertung auf diesem Set"
+  ],
+  "usage_rule": "Nur fuer die Endauswertung von V4 (und zum Vergleich V3) verwenden."
+}

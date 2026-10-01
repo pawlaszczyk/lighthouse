@@ -1,0 +1,247 @@
+{
+  "file": "lighthouse_etsi_cdr_basic_train.json",
+  "sha256": "e58fcd99b279ac41aa2425995605b0091e60291ff4e60295836ba23c2185c37f",
+  "created_utc": "2026-09-28T15:31:14+00:00",
+  "generator": "generate_basic_sets.py + basic_concepts.py",
+  "bank": "train",
+  "seed": 9191,
+  "max_sim": 0.8,
+  "n_rows": 744,
+  "n_questions": 372,
+  "by_skill": {
+    "LOOKUP": 168,
+    "COUNT": 84,
+    "IDENT": 168,
+    "DATETIME": 112,
+    "CELL": 128,
+    "PARTNER": 56,
+    "SOURCE": 28
+  },
+  "by_difficulty": {
+    "easy": 576,
+    "medium": 168
+  },
+  "families": {
+    "B01_records_of_number": {
+      "skill": "LOOKUP",
+      "difficulty": "easy",
+      "questions": 14,
+      "tries": 15,
+      "max_sim": 0.757
+    },
+    "B02_records_of_number_on_day": {
+      "skill": "LOOKUP",
+      "difficulty": "easy",
+      "questions": 14,
+      "tries": 14,
+      "max_sim": 0.775
+    },
+    "B03_count_records_of_number": {
+      "skill": "COUNT",
+      "difficulty": "easy",
+      "questions": 14,
+      "tries": 20,
+      "max_sim": 0.787
+    },
+    "B04_imsi_of_number": {
+      "skill": "IDENT",
+      "difficulty": "easy",
+      "questions": 14,
+      "tries": 14,
+      "max_sim": 0.786
+    },
+    "B05_imei_of_number": {
+      "skill": "IDENT",
+      "difficulty": "easy",
+      "questions": 14,
+      "tries": 27,
+      "max_sim": 0.795
+    },
+    "B06_number_of_imsi": {
+      "skill": "IDENT",
+      "difficulty": "easy",
+      "questions": 14,
+      "tries": 92,
+      "max_sim": 0.788
+    },
+    "B07_number_of_imei": {
+      "skill": "IDENT",
+      "difficulty": "easy",
+      "questions": 14,
+      "tries": 16,
+      "max_sim": 0.782
+    },
+    "B08_imei_of_imsi": {
+      "skill": "IDENT",
+      "difficulty": "easy",
+      "questions": 14,
+      "tries": 15,
+      "max_sim": 0.742
+    },
+    "B09_apn_of_number": {
+      "skill": "IDENT",
+      "difficulty": "easy",
+      "questions": 14,
+      "tries": 22,
+      "max_sim": 0.773
+    },
+    "B10_first_record": {
+      "skill": "DATETIME",
+      "difficulty": "easy",
+      "questions": 14,
+      "tries": 16,
+      "max_sim": 0.748
+    },
+    "B11_last_record": {
+      "skill": "DATETIME",
+      "difficulty": "easy",
+      "questions": 14,
+      "tries": 19,
+      "max_sim": 0.773
+    },
+    "B12_calls_of_number": {
+      "skill": "LOOKUP",
+      "difficulty": "easy",
+      "questions": 14,
+      "tries": 18,
+      "max_sim": 0.725
+    },
+    "B13_directed_calls_of_number": {
+      "skill": "LOOKUP",
+      "difficulty": "easy",
+      "questions": 14,
+      "tries": 14,
+      "max_sim": 0.725
+    },
+    "B14_sms_of_number": {
+      "skill": "LOOKUP",
+      "difficulty": "easy",
+      "questions": 14,
+      "tries": 21,
+      "max_sim": 0.703
+    },
+    "B15_gprs_of_number": {
+      "skill": "LOOKUP",
+      "difficulty": "easy",
+      "questions": 14,
+      "tries": 14,
+      "max_sim": 0.711
+    },
+    "B16_numbers_in_cell": {
+      "skill": "CELL",
+      "difficulty": "easy",
+      "questions": 2,
+      "tries": 300,
+      "max_sim": 0.778
+    },
+    "B17_records_in_cell_on_day": {
+      "skill": "CELL",
+      "difficulty": "easy",
+      "questions": 14,
+      "tries": 15,
+      "max_sim": 0.724
+    },
+    "B18_cells_of_number": {
+      "skill": "CELL",
+      "difficulty": "easy",
+      "questions": 6,
+      "tries": 300,
+      "max_sim": 0.711
+    },
+    "B19_numbers_active_on_day": {
+      "skill": "LOOKUP",
+      "difficulty": "easy",
+      "questions": 0,
+      "tries": 300,
+      "max_sim": null
+    },
+    "B20_count_type_on_day": {
+      "skill": "COUNT",
+      "difficulty": "easy",
+      "questions": 14,
+      "tries": 88,
+      "max_sim": 0.796
+    },
+    "B21_call_partners_directed": {
+      "skill": "PARTNER",
+      "difficulty": "medium",
+      "questions": 14,
+      "tries": 15,
+      "max_sim": 0.792
+    },
+    "B22_sms_partners_directed": {
+      "skill": "PARTNER",
+      "difficulty": "medium",
+      "questions": 14,
+      "tries": 24,
+      "max_sim": 0.775
+    },
+    "B23_source_explicit": {
+      "skill": "SOURCE",
+      "difficulty": "medium",
+      "questions": 14,
+      "tries": 17,
+      "max_sim": 0.667
+    },
+    "B24_records_of_number_time_window": {
+      "skill": "DATETIME",
+      "difficulty": "medium",
+      "questions": 14,
+      "tries": 17,
+      "max_sim": 0.723
+    },
+    "B25_call_duration": {
+      "skill": "COUNT",
+      "difficulty": "medium",
+      "questions": 14,
+      "tries": 14,
+      "max_sim": 0.721
+    },
+    "B26_records_of_number_in_cell": {
+      "skill": "CELL",
+      "difficulty": "easy",
+      "questions": 14,
+      "tries": 14,
+      "max_sim": 0.716
+    },
+    "B27_count_in_cell": {
+      "skill": "CELL",
+      "difficulty": "easy",
+      "questions": 14,
+      "tries": 15,
+      "max_sim": 0.774
+    },
+    "B28_numbers_in_cell_on_day": {
+      "skill": "CELL",
+      "difficulty": "easy",
+      "questions": 14,
+      "tries": 17,
+      "max_sim": 0.786
+    },
+    "B29_numbers_active_in_window": {
+      "skill": "DATETIME",
+      "difficulty": "medium",
+      "questions": 14,
+      "tries": 21,
+      "max_sim": 0.748
+    }
+  },
+  "rejected": {
+    "sql_in_compared_set": 765,
+    "too_similar": 136,
+    "duplicate": 203,
+    "trivial_scalar": 8,
+    "no_params": 3,
+    "empty": 7
+  },
+  "compared_against": [
+    "lighthouse_etsi_cdr_HOLDOUT_EXTRA.json",
+    "lighthouse_etsi_cdr_HOLDOUT_V2.json",
+    "lighthouse_etsi_cdr_HOLDOUT_V2_LARGE.json",
+    "lighthouse_etsi_cdr_HOLDOUT_V3.json",
+    "lighthouse_etsi_cdr_HOLDOUT_V4.json",
+    "lighthouse_etsi_cdr_HOLDOUT_C.json",
+    "lighthouse_etsi_cdr_HOLDOUT_D.json"
+  ],
+  "note": "split auf 'train' gesetzt (Herkunft in 'subset')"
+}

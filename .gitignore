@@ -1,0 +1,9 @@
+.DS_Store
+__pycache__/
+*.pyc
+*.gguf
+*.sqlite-wal
+*.sqlite-shm
+*.db-wal
+*.db-shm
+_img_candidates/

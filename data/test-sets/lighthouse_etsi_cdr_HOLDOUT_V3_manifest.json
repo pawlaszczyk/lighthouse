@@ -1,0 +1,141 @@
+{
+  "file": "lighthouse_etsi_cdr_HOLDOUT_V3.json",
+  "sha256": "a4f96b1ac201e8326fca023a9c54c4d464e3cc9185abb628705e2c1d8c26ee77",
+  "created_utc": "2026-09-24T19:49:05Z",
+  "generator": "generate_etsi_cdr_holdout_v3.py",
+  "seed": 2026,
+  "db": "case_merged_views.db",
+  "n_rows": 112,
+  "n_questions": 56,
+  "by_skill": {
+    "TIME": 14,
+    "DATETIME": 16,
+    "RANK": 10,
+    "PARTNER": 24,
+    "GAP": 8,
+    "DAYS": 16,
+    "COUNT": 16,
+    "GEO": 8
+  },
+  "by_difficulty": {
+    "hard": 64,
+    "medium": 48
+  },
+  "families": {
+    "V3_T1_night_window": {
+      "skill": "TIME",
+      "questions": 4,
+      "tries": 4,
+      "max_sim_to_any_prior_question": 0.757
+    },
+    "V3_T2_morning_only_numbers": {
+      "skill": "TIME",
+      "questions": 3,
+      "tries": 400,
+      "max_sim_to_any_prior_question": 0.691
+    },
+    "V3_D1_first_record_on_day": {
+      "skill": "DATETIME",
+      "questions": 4,
+      "tries": 4,
+      "max_sim_to_any_prior_question": 0.657
+    },
+    "V3_D2_last_hours_of_data": {
+      "skill": "DATETIME",
+      "questions": 4,
+      "tries": 4,
+      "max_sim_to_any_prior_question": 0.615
+    },
+    "V3_R2_top2_cells_of_imsi": {
+      "skill": "RANK",
+      "questions": 2,
+      "tries": 400,
+      "max_sim_to_any_prior_question": 0.573
+    },
+    "V3_R3_quietest_day": {
+      "skill": "RANK",
+      "questions": 3,
+      "tries": 400,
+      "max_sim_to_any_prior_question": 0.645
+    },
+    "V3_P1_how_often_called": {
+      "skill": "PARTNER",
+      "questions": 4,
+      "tries": 5,
+      "max_sim_to_any_prior_question": 0.667
+    },
+    "V3_P2_common_contacts": {
+      "skill": "PARTNER",
+      "questions": 4,
+      "tries": 4,
+      "max_sim_to_any_prior_question": 0.667
+    },
+    "V3_P3_sms_abroad": {
+      "skill": "PARTNER",
+      "questions": 4,
+      "tries": 8,
+      "max_sim_to_any_prior_question": 0.641
+    },
+    "V3_G1_numbers_with_long_pause": {
+      "skill": "GAP",
+      "questions": 4,
+      "tries": 7,
+      "max_sim_to_any_prior_question": 0.702
+    },
+    "V3_Y1_last_active_day": {
+      "skill": "DAYS",
+      "questions": 4,
+      "tries": 4,
+      "max_sim_to_any_prior_question": 0.71
+    },
+    "V3_Y2_single_day_numbers": {
+      "skill": "DAYS",
+      "questions": 4,
+      "tries": 5,
+      "max_sim_to_any_prior_question": 0.791
+    },
+    "V3_C1_calls_longer_minutes": {
+      "skill": "COUNT",
+      "questions": 4,
+      "tries": 4,
+      "max_sim_to_any_prior_question": 0.693
+    },
+    "V3_C2_cells_on_day": {
+      "skill": "COUNT",
+      "questions": 4,
+      "tries": 7,
+      "max_sim_to_any_prior_question": 0.741
+    },
+    "V3_L1_north_of_latitude": {
+      "skill": "GEO",
+      "questions": 4,
+      "tries": 9,
+      "max_sim_to_any_prior_question": 0.573
+    }
+  },
+  "rejected": {
+    "duplicate": 903,
+    "no_params_or_tie": 298,
+    "empty": 8
+  },
+  "compared_against": [
+    "lighthouse_etsi_cdr_training_dataset.json",
+    "lighthouse_etsi_cdr_targeted_train.json",
+    "lighthouse_etsi_cdr_HOLDOUT_EXTRA.json",
+    "lighthouse_etsi_cdr_HOLDOUT_V2.json",
+    "lighthouse_etsi_cdr_HOLDOUT_V2_LARGE.json"
+  ],
+  "frozen_before": [
+    "Evaluation von Validator v3",
+    "jedem weiteren Training",
+    "jeder weiteren Validator-/Prompt-Aenderung"
+  ],
+  "usage_rule": "Nur fuer die Endauswertung verwenden. Wer anhand dieses Sets entwickelt, muss danach ein neues Set erzeugen.",
+  "known_state_at_freeze": {
+    "models": [
+      "forensic_sql_ETSI_CDR_CONTINUED_FIXED/best_model",
+      "forensic_sql_ETSI_CDR_V2/final"
+    ],
+    "sql_validator_version": "3"
+  }
+}

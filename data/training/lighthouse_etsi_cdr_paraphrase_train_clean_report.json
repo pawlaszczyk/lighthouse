@@ -1,0 +1,454 @@
+{
+  "changed": 64,
+  "left_unchanged": 0,
+  "examples": [
+    {
+      "instruction": "Welche Rufnummern waren ausnahmslos vor 16:30 Uhr aktiv?",
+      "old": "SELECT msisdn FROM response_records WHERE msisdn IS NOT NULL AND source_file='ETSI-Testdaten-45' GROUP BY msisdn HAVING MAX(time(start_time)) < '16:30:00';",
+      "new": "SELECT msisdn FROM response_records WHERE msisdn IS NOT NULL GROUP BY msisdn HAVING MAX(time(start_time)) < '16:30:00';",
+      "rows_old": 37,
+      "rows_new": 74
+    },
+    {
+      "instruction": "Rufnummern, die nie nach 16:30:00 Uhr in Erscheinung traten – welche sind das?",
+      "old": "SELECT msisdn FROM response_records WHERE msisdn IS NOT NULL AND source_file='ETSI-Testdaten-45' GROUP BY msisdn HAVING MAX(time(start_time)) < '16:30:00';",
+      "new": "SELECT msisdn FROM response_records WHERE msisdn IS NOT NULL GROUP BY msisdn HAVING MAX(time(start_time)) < '16:30:00';",
+      "rows_old": 37,
+      "rows_new": 74
+    },
+    {
+      "instruction": "For which subscribers is every single record earlier than 16:30:00?",
+      "old": "SELECT msisdn FROM response_records WHERE msisdn IS NOT NULL AND source_file='ETSI-Testdaten-45' GROUP BY msisdn HAVING MAX(time(start_time)) < '16:30:00';",
+      "new": "SELECT msisdn FROM response_records WHERE msisdn IS NOT NULL GROUP BY msisdn HAVING MAX(time(start_time)) < '16:30:00';",
+      "rows_old": 37,
+      "rows_new": 74
+    },
+    {
+      "instruction": "List the numbers whose records all fall before 16:30:00.",
+      "old": "SELECT msisdn FROM response_records WHERE msisdn IS NOT NULL AND source_file='ETSI-Testdaten-45' GROUP BY msisdn HAVING MAX(time(start_time)) < '16:30:00';",
+      "new": "SELECT msisdn FROM response_records WHERE msisdn IS NOT NULL GROUP BY msisdn HAVING MAX(time(start_time)) < '16:30:00';",
+      "rows_old": 37,
+      "rows_new": 74
+    },
+    {
+      "instruction": "Welche Rufnummern waren ausnahmslos vor 10:30 Uhr aktiv?",
+      "old": "SELECT msisdn FROM response_records WHERE msisdn IS NOT NULL AND source_file='ETSI-Testdaten-45' GROUP BY msisdn HAVING MAX(time(start_time)) < '10:30:00';",
+      "new": "SELECT msisdn FROM response_records WHERE msisdn IS NOT NULL GROUP BY msisdn HAVING MAX(time(start_time)) < '10:30:00';",
+      "rows_old": 14,
+      "rows_new": 30
+    },
+    {
+      "instruction": "Bei welchen Anschlüssen fällt jeder einzelne Datensatz in die Zeit vor 10:30 Uhr?",
+      "old": "SELECT msisdn FROM response_records WHERE msisdn IS NOT NULL AND source_file='ETSI-Testdaten-45' GROUP BY msisdn HAVING MAX(time(start_time)) < '10:30:00';",
+      "new": "SELECT msisdn FROM response_records WHERE msisdn IS NOT NULL GROUP BY msisdn HAVING MAX(time(start_time)) < '10:30:00';",
+      "rows_old": 14,
+      "rows_new": 30
+    },
+    {
+      "instruction": "List the numbers whose records all fall before 10:30:00.",
+      "old": "SELECT msisdn FROM response_records WHERE msisdn IS NOT NULL AND source_file='ETSI-Testdaten-45' GROUP BY msisdn HAVING MAX(time(start_time)) < '10:30:00';",
+      "new": "SELECT msisdn FROM response_records WHERE msisdn IS NOT NULL GROUP BY msisdn HAVING MAX(time(start_time)) < '10:30:00';",
+      "rows_old": 14,
+      "rows_new": 30
+    },
+    {
+      "instruction": "Which phone numbers were active exclusively before 10:30:00?",
+      "old": "SELECT msisdn FROM response_records WHERE msisdn IS NOT NULL AND source_file='ETSI-Testdaten-45' GROUP BY msisdn HAVING MAX(time(start_time)) < '10:30:00';",
+      "new": "SELECT msisdn FROM response_records WHERE msisdn IS NOT NULL GROUP BY msisdn HAVING MAX(time(start_time)) < '10:30:00';",
+      "rows_old": 14,
+      "rows_new": 30
+    },
+    {
+      "instruction": "Welche Rufnummern waren ausnahmslos vor 09:30 Uhr aktiv?",
+      "old": "SELECT msisdn FROM response_records WHERE msisdn IS NOT NULL AND source_file='ETSI-Testdaten-Dresden' GROUP BY msisdn HAVING MAX(time(start_time)) < '09:30:00';",
+      "new": "SELECT msisdn FROM response_records WHERE msisdn IS NOT NULL GROUP BY msisdn HAVING MAX(time(start_time)) < '09:30:00';",
+      "rows_old": 19,
+      "rows_new": 26
+    },
+    {
+      "instruction": "Liste die Rufnummern auf, deren sämtliche Datensätze vor 09:30:00 Uhr liegen.",
+      "old": "SELECT msisdn FROM response_records WHERE msisdn IS NOT NULL AND source_file='ETSI-Testdaten-Dresden' GROUP BY msisdn HAVING MAX(time(start_time)) < '09:30:00';",
+      "new": "SELECT msisdn FROM response_records WHERE msisdn IS NOT NULL GROUP BY msisdn HAVING MAX(time(start_time)) < '09:30:00';",
+      "rows_old": 19,
+      "rows_new": 26
+    },
+    {
+      "instruction": "List the numbers whose records all fall before 09:30:00.",
+      "old": "SELECT msisdn FROM response_records WHERE msisdn IS NOT NULL AND source_file='ETSI-Testdaten-Dresden' GROUP BY msisdn HAVING MAX(time(start_time)) < '09:30:00';",
+      "new": "SELECT msisdn FROM response_records WHERE msisdn IS NOT NULL GROUP BY msisdn HAVING MAX(time(start_time)) < '09:30:00';",
+      "rows_old": 19,
+      "rows_new": 26
+    },
+    {
+      "instruction": "Numbers that never appear after 09:30:00 – which are they?",
+      "old": "SELECT msisdn FROM response_records WHERE msisdn IS NOT NULL AND source_file='ETSI-Testdaten-Dresden' GROUP BY msisdn HAVING MAX(time(start_time)) < '09:30:00';",
+      "new": "SELECT msisdn FROM response_records WHERE msisdn IS NOT NULL GROUP BY msisdn HAVING MAX(time(start_time)) < '09:30:00';",
+      "rows_old": 19,
+      "rows_new": 26
+    },
+    {
+      "instruction": "Rufnummern, die nie nach 12:30:00 Uhr in Erscheinung traten – welche sind das?",
+      "old": "SELECT msisdn FROM response_records WHERE msisdn IS NOT NULL AND source_file='ETSI-Testdaten-Dresden' GROUP BY msisdn HAVING MAX(time(start_time)) < '12:30:00';",
+      "new": "SELECT msisdn FROM response_records WHERE msisdn IS NOT NULL GROUP BY msisdn HAVING MAX(time(start_time)) < '12:30:00';",
+      "rows_old": 29,
+      "rows_new": 41
+    },
+    {
+      "instruction": "Welche Rufnummern waren ausnahmslos vor 12:30 Uhr aktiv?",
+      "old": "SELECT msisdn FROM response_records WHERE msisdn IS NOT NULL AND source_file='ETSI-Testdaten-Dresden' GROUP BY msisdn HAVING MAX(time(start_time)) < '12:30:00';",
+      "new": "SELECT msisdn FROM response_records WHERE msisdn IS NOT NULL GROUP BY msisdn HAVING MAX(time(start_time)) < '12:30:00';",
+      "rows_old": 29,
+      "rows_new": 41
+    },
+    {
+      "instruction": "Numbers that never appear after 12:30:00 – which are they?",
+      "old": "SELECT msisdn FROM response_records WHERE msisdn IS NOT NULL AND source_file='ETSI-Testdaten-Dresden' GROUP BY msisdn HAVING MAX(time(start_time)) < '12:30:00';",
+      "new": "SELECT msisdn FROM response_records WHERE msisdn IS NOT NULL GROUP BY msisdn HAVING MAX(time(start_time)) < '12:30:00';",
+      "rows_old": 29,
+      "rows_new": 41
+    },
+    {
+      "instruction": "For which subscribers is every single record earlier than 12:30:00?",
+      "old": "SELECT msisdn FROM response_records WHERE msisdn IS NOT NULL AND source_file='ETSI-Testdaten-Dresden' GROUP BY msisdn HAVING MAX(time(start_time)) < '12:30:00';",
+      "new": "SELECT msisdn FROM response_records WHERE msisdn IS NOT NULL GROUP BY msisdn HAVING MAX(time(start_time)) < '12:30:00';",
+      "rows_old": 29,
+      "rows_new": 41
+    },
+    {
+      "instruction": "Welche Rufnummern waren mindestens einmal nach 16:30 Uhr aktiv?",
+      "old": "SELECT DISTINCT msisdn FROM response_records WHERE msisdn IS NOT NULL AND source_file='ETSI-Testdaten-45' AND time(start_time) > '16:30:00';",
+      "new": "SELECT DISTINCT msisdn FROM response_records WHERE msisdn IS NOT NULL AND time(start_time) > '16:30:00';",
+      "rows_old": 23,
+      "rows_new": 57
+    },
+    {
+      "instruction": "Gab es Rufnummern mit Aktivität nach 16:30:00 Uhr? Nenne sie.",
+      "old": "SELECT DISTINCT msisdn FROM response_records WHERE msisdn IS NOT NULL AND source_file='ETSI-Testdaten-45' AND time(start_time) > '16:30:00';",
+      "new": "SELECT DISTINCT msisdn FROM response_records WHERE msisdn IS NOT NULL AND time(start_time) > '16:30:00';",
+      "rows_old": 23,
+      "rows_new": 57
+    },
+    {
+      "instruction": "Active at some point after 16:30:00: which subscribers?",
+      "old": "SELECT DISTINCT msisdn FROM response_records WHERE msisdn IS NOT NULL AND source_file='ETSI-Testdaten-45' AND time(start_time) > '16:30:00';",
+      "new": "SELECT DISTINCT msisdn FROM response_records WHERE msisdn IS NOT NULL AND time(start_time) > '16:30:00';",
+      "rows_old": 23,
+      "rows_new": 57
+    },
+    {
+      "instruction": "Were there numbers active after 16:30:00? Name them.",
+      "old": "SELECT DISTINCT msisdn FROM response_records WHERE msisdn IS NOT NULL AND source_file='ETSI-Testdaten-45' AND time(start_time) > '16:30:00';",
+      "new": "SELECT DISTINCT msisdn FROM response_records WHERE msisdn IS NOT NULL AND time(start_time) > '16:30:00';",
+      "rows_old": 23,
+      "rows_new": 57
+    },
+    {
+      "instruction": "Irgendwann nach 21 Uhr aktiv: welche Anschlüsse?",
+      "old": "SELECT DISTINCT msisdn FROM response_records WHERE msisdn IS NOT NULL AND source_file='ETSI-Testdaten-Dresden' AND time(start_time) > '21:00:00';",
+      "new": "SELECT DISTINCT msisdn FROM response_records WHERE msisdn IS NOT NULL AND time(start_time) > '21:00:00';",
+      "rows_old": 15,
+      "rows_new": 20
+    },
+    {
+      "instruction": "Liste alle Nummern mit wenigstens einem Datensatz später als 21:00 Uhr.",
+      "old": "SELECT DISTINCT msisdn FROM response_records WHERE msisdn IS NOT NULL AND source_file='ETSI-Testdaten-Dresden' AND time(start_time) > '21:00:00';",
+      "new": "SELECT DISTINCT msisdn FROM response_records WHERE msisdn IS NOT NULL AND time(start_time) > '21:00:00';",
+      "rows_old": 15,
+      "rows_new": 20
+    },
+    {
+      "instruction": "List all numbers with at least one record later than 21:00.",
+      "old": "SELECT DISTINCT msisdn FROM response_records WHERE msisdn IS NOT NULL AND source_file='ETSI-Testdaten-Dresden' AND time(start_time) > '21:00:00';",
+      "new": "SELECT DISTINCT msisdn FROM response_records WHERE msisdn IS NOT NULL AND time(start_time) > '21:00:00';",
+      "rows_old": 15,
+      "rows_new": 20
+    },
+    {
+      "instruction": "Active at some point after 21:00: which subscribers?",
+      "old": "SELECT DISTINCT msisdn FROM response_records WHERE msisdn IS NOT NULL AND source_file='ETSI-Testdaten-Dresden' AND time(start_time) > '21:00:00';",
+      "new": "SELECT DISTINCT msisdn FROM response_records WHERE msisdn IS NOT NULL AND time(start_time) > '21:00:00';",
+      "rows_old": 15,
+      "rows_new": 20
+    },
+    {
+      "instruction": "Irgendwann nach 18 Uhr aktiv: welche Anschlüsse?",
+      "old": "SELECT DISTINCT msisdn FROM response_records WHERE msisdn IS NOT NULL AND source_file='ETSI-Testdaten-45' AND time(start_time) > '18:00:00';",
+      "new": "SELECT DISTINCT msisdn FROM response_records WHERE msisdn IS NOT NULL AND time(start_time) > '18:00:00';",
+      "rows_old": 16,
+      "rows_new": 43
+    },
+    {
+      "instruction": "Gab es Rufnummern mit Aktivität nach 18:00 Uhr? Nenne sie.",
+      "old": "SELECT DISTINCT msisdn FROM response_records WHERE msisdn IS NOT NULL AND source_file='ETSI-Testdaten-45' AND time(start_time) > '18:00:00';",
+      "new": "SELECT DISTINCT msisdn FROM response_records WHERE msisdn IS NOT NULL AND time(start_time) > '18:00:00';",
+      "rows_old": 16,
+      "rows_new": 43
+    },
+    {
+      "instruction": "Which phone numbers were active at least once after 18:00?",
+      "old": "SELECT DISTINCT msisdn FROM response_records WHERE msisdn IS NOT NULL AND source_file='ETSI-Testdaten-45' AND time(start_time) > '18:00:00';",
+      "new": "SELECT DISTINCT msisdn FROM response_records WHERE msisdn IS NOT NULL AND time(start_time) > '18:00:00';",
+      "rows_old": 16,
+      "rows_new": 43
+    },
+    {
+      "instruction": "Were there numbers active after 18:00? Name them.",
+      "old": "SELECT DISTINCT msisdn FROM response_records WHERE msisdn IS NOT NULL AND source_file='ETSI-Testdaten-45' AND time(start_time) > '18:00:00';",
+      "new": "SELECT DISTINCT msisdn FROM response_records WHERE msisdn IS NOT NULL AND time(start_time) > '18:00:00';",
+      "rows_old": 16,
+      "rows_new": 43
+    },
+    {
+      "instruction": "Liste alle Nummern mit wenigstens einem Datensatz später als 18:30:00 Uhr.",
+      "old": "SELECT DISTINCT msisdn FROM response_records WHERE msisdn IS NOT NULL AND source_file='ETSI-Testdaten-45' AND time(start_time) > '18:30:00';",
+      "new": "SELECT DISTINCT msisdn FROM response_records WHERE msisdn IS NOT NULL AND time(start_time) > '18:30:00';",
+      "rows_old": 14,
+      "rows_new": 39
+    },
+    {
+      "instruction": "Welche Rufnummern waren mindestens einmal nach 18:30 Uhr aktiv?",
+      "old": "SELECT DISTINCT msisdn FROM response_records WHERE msisdn IS NOT NULL AND source_file='ETSI-Testdaten-45' AND time(start_time) > '18:30:00';",
+      "new": "SELECT DISTINCT msisdn FROM response_records WHERE msisdn IS NOT NULL AND time(start_time) > '18:30:00';",
+      "rows_old": 14,
+      "rows_new": 39
+    },
+    {
+      "instruction": "Which phone numbers were active at least once after 18:30:00?",
+      "old": "SELECT DISTINCT msisdn FROM response_records WHERE msisdn IS NOT NULL AND source_file='ETSI-Testdaten-45' AND time(start_time) > '18:30:00';",
+      "new": "SELECT DISTINCT msisdn FROM response_records WHERE msisdn IS NOT NULL AND time(start_time) > '18:30:00';",
+      "rows_old": 14,
+      "rows_new": 39
+    },
+    {
+      "instruction": "Active at some point after 18:30:00: which subscribers?",
+      "old": "SELECT DISTINCT msisdn FROM response_records WHERE msisdn IS NOT NULL AND source_file='ETSI-Testdaten-45' AND time(start_time) > '18:30:00';",
+      "new": "SELECT DISTINCT msisdn FROM response_records WHERE msisdn IS NOT NULL AND time(start_time) > '18:30:00';",
+      "rows_old": 14,
+      "rows_new": 39
+    },
+    {
+      "instruction": "Rufnummern mit Datensätzen an mindestens zwei verschiedenen Tagen – welche?",
+      "old": "SELECT msisdn FROM response_records WHERE msisdn IS NOT NULL AND source_file='ETSI-Testdaten-Dresden' GROUP BY msisdn HAVING COUNT(DISTINCT date(start_time)) >= 2;",
+      "new": "SELECT msisdn FROM response_records WHERE msisdn IS NOT NULL GROUP BY msisdn HAVING COUNT(DISTINCT date(start_time)) >= 2;",
+      "rows_old": 17,
+      "rows_new": 50
+    },
+    {
+      "instruction": "Bei welchen Anschlüssen gibt es Datensätze an mindestens zwei verschiedenen Kalendertagen?",
+      "old": "SELECT msisdn FROM response_records WHERE msisdn IS NOT NULL AND source_file='ETSI-Testdaten-Dresden' GROUP BY msisdn HAVING COUNT(DISTINCT date(start_time)) >= 2;",
+      "new": "SELECT msisdn FROM response_records WHERE msisdn IS NOT NULL GROUP BY msisdn HAVING COUNT(DISTINCT date(start_time)) >= 2;",
+      "rows_old": 17,
+      "rows_new": 50
+    },
+    {
+      "instruction": "Numbers with records on at least two different days – which ones?",
+      "old": "SELECT msisdn FROM response_records WHERE msisdn IS NOT NULL AND source_file='ETSI-Testdaten-Dresden' GROUP BY msisdn HAVING COUNT(DISTINCT date(start_time)) >= 2;",
+      "new": "SELECT msisdn FROM response_records WHERE msisdn IS NOT NULL GROUP BY msisdn HAVING COUNT(DISTINCT date(start_time)) >= 2;",
+      "rows_old": 17,
+      "rows_new": 50
+    },
+    {
+      "instruction": "For which subscribers are there records on at least two different dates?",
+      "old": "SELECT msisdn FROM response_records WHERE msisdn IS NOT NULL AND source_file='ETSI-Testdaten-Dresden' GROUP BY msisdn HAVING COUNT(DISTINCT date(start_time)) >= 2;",
+      "new": "SELECT msisdn FROM response_records WHERE msisdn IS NOT NULL GROUP BY msisdn HAVING COUNT(DISTINCT date(start_time)) >= 2;",
+      "rows_old": 17,
+      "rows_new": 50
+    },
+    {
+      "instruction": "Bei welchen Anschlüssen gibt es Anrufe an mindestens zwei verschiedenen Kalendertagen?",
+      "old": "SELECT msisdn FROM response_records WHERE msisdn IS NOT NULL AND party_type IN ('MOC','MTC') AND source_file='ETSI-Testdaten-Dresden' GROUP BY msisdn HAVING COUNT(DISTINCT date(start_time)) >= 2;",
+      "new": "SELECT msisdn FROM response_records WHERE msisdn IS NOT NULL AND party_type IN ('MOC','MTC') GROUP BY msisdn HAVING COUNT(DISTINCT date(start_time)) >= 2;",
+      "rows_old": 10,
+      "rows_new": 12
+    },
+    {
+      "instruction": "Welche Rufnummern hatten Anrufe an mindestens zwei verschiedenen Tagen?",
+      "old": "SELECT msisdn FROM response_records WHERE msisdn IS NOT NULL AND party_type IN ('MOC','MTC') AND source_file='ETSI-Testdaten-Dresden' GROUP BY msisdn HAVING COUNT(DISTINCT date(start_time)) >= 2;",
+      "new": "SELECT msisdn FROM response_records WHERE msisdn IS NOT NULL AND party_type IN ('MOC','MTC') GROUP BY msisdn HAVING COUNT(DISTINCT date(start_time)) >= 2;",
+      "rows_old": 10,
+      "rows_new": 12
+    },
+    {
+      "instruction": "List the numbers whose calls are spread over at least two different calendar days.",
+      "old": "SELECT msisdn FROM response_records WHERE msisdn IS NOT NULL AND party_type IN ('MOC','MTC') AND source_file='ETSI-Testdaten-Dresden' GROUP BY msisdn HAVING COUNT(DISTINCT date(start_time)) >= 2;",
+      "new": "SELECT msisdn FROM response_records WHERE msisdn IS NOT NULL AND party_type IN ('MOC','MTC') GROUP BY msisdn HAVING COUNT(DISTINCT date(start_time)) >= 2;",
+      "rows_old": 10,
+      "rows_new": 12
+    },
+    {
+      "instruction": "For which subscribers are there calls on at least two different dates?",
+      "old": "SELECT msisdn FROM response_records WHERE msisdn IS NOT NULL AND party_type IN ('MOC','MTC') AND source_file='ETSI-Testdaten-Dresden' GROUP BY msisdn HAVING COUNT(DISTINCT date(start_time)) >= 2;",
+      "new": "SELECT msisdn FROM response_records WHERE msisdn IS NOT NULL AND party_type IN ('MOC','MTC') GROUP BY msisdn HAVING COUNT(DISTINCT date(start_time)) >= 2;",
+      "rows_old": 10,
+      "rows_new": 12
+    },
+    {
+      "instruction": "Liste die Nummern, deren GPRS-Sitzungen sich auf genau einem einzigen Kalendertag verteilen.",
+      "old": "SELECT msisdn FROM response_records WHERE msisdn IS NOT NULL AND party_type='GPRS' AND source_file='ETSI-Testdaten-Dresden' GROUP BY msisdn HAVING COUNT(DISTINCT date(start_time)) = 1;",
+      "new": "SELECT msisdn FROM response_records WHERE msisdn IS NOT NULL AND party_type='GPRS' GROUP BY msisdn HAVING COUNT(DISTINCT date(start_time)) = 1;",
+      "rows_old": 40,
+      "rows_new": 50
+    },
+    {
+      "instruction": "Bei welchen Anschlüssen gibt es GPRS-Sitzungen an genau einem einzigen Kalendertag?",
+      "old": "SELECT msisdn FROM response_records WHERE msisdn IS NOT NULL AND party_type='GPRS' AND source_file='ETSI-Testdaten-Dresden' GROUP BY msisdn HAVING COUNT(DISTINCT date(start_time)) = 1;",
+      "new": "SELECT msisdn FROM response_records WHERE msisdn IS NOT NULL AND party_type='GPRS' GROUP BY msisdn HAVING COUNT(DISTINCT date(start_time)) = 1;",
+      "rows_old": 40,
+      "rows_new": 50
+    },
+    {
+      "instruction": "Numbers with GPRS sessions on exactly one single day – which ones?",
+      "old": "SELECT msisdn FROM response_records WHERE msisdn IS NOT NULL AND party_type='GPRS' AND source_file='ETSI-Testdaten-Dresden' GROUP BY msisdn HAVING COUNT(DISTINCT date(start_time)) = 1;",
+      "new": "SELECT msisdn FROM response_records WHERE msisdn IS NOT NULL AND party_type='GPRS' GROUP BY msisdn HAVING COUNT(DISTINCT date(start_time)) = 1;",
+      "rows_old": 40,
+      "rows_new": 50
+    },
+    {
+      "instruction": "List the numbers whose GPRS sessions are spread over exactly one single calendar day.",
+      "old": "SELECT msisdn FROM response_records WHERE msisdn IS NOT NULL AND party_type='GPRS' AND source_file='ETSI-Testdaten-Dresden' GROUP BY msisdn HAVING COUNT(DISTINCT date(start_time)) = 1;",
+      "new": "SELECT msisdn FROM response_records WHERE msisdn IS NOT NULL AND party_type='GPRS' GROUP BY msisdn HAVING COUNT(DISTINCT date(start_time)) = 1;",
+      "rows_old": 40,
+      "rows_new": 50
+    },
+    {
+      "instruction": "IMSI 260000000000001: die drei häufigsten Zellen (cell_lac_tac/cell_ci)?",
+      "old": "SELECT cell_lac_tac, cell_ci, COUNT(*) AS n FROM response_records WHERE imsi='260000000000001' AND cell_ci IS NOT NULL AND source_file='ETSI-Testdaten-45' GROUP BY cell_lac_tac, cell_ci ORDER BY n DESC LIMIT 3;",
+      "new": "SELECT cell_lac_tac, cell_ci, COUNT(*) AS n FROM response_records WHERE imsi='260000000000001' AND cell_ci IS NOT NULL GROUP BY cell_lac_tac, cell_ci ORDER BY n DESC LIMIT 3;",
+      "rows_old": 3,
+      "rows_new": 3
+    },
+    {
+      "instruction": "Nenne die drei meistgenutzten Funkzellen von IMSI 260000000000001.",
+      "old": "SELECT cell_lac_tac, cell_ci, COUNT(*) AS n FROM response_records WHERE imsi='260000000000001' AND cell_ci IS NOT NULL AND source_file='ETSI-Testdaten-45' GROUP BY cell_lac_tac, cell_ci ORDER BY n DESC LIMIT 3;",
+      "new": "SELECT cell_lac_tac, cell_ci, COUNT(*) AS n FROM response_records WHERE imsi='260000000000001' AND cell_ci IS NOT NULL GROUP BY cell_lac_tac, cell_ci ORDER BY n DESC LIMIT 3;",
+      "rows_old": 3,
+      "rows_new": 3
+    },
+    {
+      "instruction": "IMSI 260000000000001: the three most frequent cells (cell_lac_tac/cell_ci)?",
+      "old": "SELECT cell_lac_tac, cell_ci, COUNT(*) AS n FROM response_records WHERE imsi='260000000000001' AND cell_ci IS NOT NULL AND source_file='ETSI-Testdaten-45' GROUP BY cell_lac_tac, cell_ci ORDER BY n DESC LIMIT 3;",
+      "new": "SELECT cell_lac_tac, cell_ci, COUNT(*) AS n FROM response_records WHERE imsi='260000000000001' AND cell_ci IS NOT NULL GROUP BY cell_lac_tac, cell_ci ORDER BY n DESC LIMIT 3;",
+      "rows_old": 3,
+      "rows_new": 3
+    },
+    {
+      "instruction": "List the top 3 cells for IMSI 260000000000001 by number of records.",
+      "old": "SELECT cell_lac_tac, cell_ci, COUNT(*) AS n FROM response_records WHERE imsi='260000000000001' AND cell_ci IS NOT NULL AND source_file='ETSI-Testdaten-45' GROUP BY cell_lac_tac, cell_ci ORDER BY n DESC LIMIT 3;",
+      "new": "SELECT cell_lac_tac, cell_ci, COUNT(*) AS n FROM response_records WHERE imsi='260000000000001' AND cell_ci IS NOT NULL GROUP BY cell_lac_tac, cell_ci ORDER BY n DESC LIMIT 3;",
+      "rows_old": 3,
+      "rows_new": 3
+    },
+    {
+      "instruction": "Welche drei Funkzellen hat die IMSI 260000000000001 am häufigsten genutzt?",
+      "old": "SELECT cell_lac_tac, cell_ci, COUNT(*) AS n FROM response_records WHERE imsi='260000000000001' AND cell_ci IS NOT NULL AND source_file='ETSI-Testdaten-Dresden' GROUP BY cell_lac_tac, cell_ci ORDER BY n DESC LIMIT 3;",
+      "new": "SELECT cell_lac_tac, cell_ci, COUNT(*) AS n FROM response_records WHERE imsi='260000000000001' AND cell_ci IS NOT NULL GROUP BY cell_lac_tac, cell_ci ORDER BY n DESC LIMIT 3;",
+      "rows_old": 3,
+      "rows_new": 3
+    },
+    {
+      "instruction": "IMSI 260000000000001: die drei häufigsten Zellen (cell_lac_tac/cell_ci)?",
+      "old": "SELECT cell_lac_tac, cell_ci, COUNT(*) AS n FROM response_records WHERE imsi='260000000000001' AND cell_ci IS NOT NULL AND source_file='ETSI-Testdaten-Dresden' GROUP BY cell_lac_tac, cell_ci ORDER BY n DESC LIMIT 3;",
+      "new": "SELECT cell_lac_tac, cell_ci, COUNT(*) AS n FROM response_records WHERE imsi='260000000000001' AND cell_ci IS NOT NULL GROUP BY cell_lac_tac, cell_ci ORDER BY n DESC LIMIT 3;",
+      "rows_old": 3,
+      "rows_new": 3
+    },
+    {
+      "instruction": "IMSI 260000000000001: the three most frequent cells (cell_lac_tac/cell_ci)?",
+      "old": "SELECT cell_lac_tac, cell_ci, COUNT(*) AS n FROM response_records WHERE imsi='260000000000001' AND cell_ci IS NOT NULL AND source_file='ETSI-Testdaten-Dresden' GROUP BY cell_lac_tac, cell_ci ORDER BY n DESC LIMIT 3;",
+      "new": "SELECT cell_lac_tac, cell_ci, COUNT(*) AS n FROM response_records WHERE imsi='260000000000001' AND cell_ci IS NOT NULL GROUP BY cell_lac_tac, cell_ci ORDER BY n DESC LIMIT 3;",
+      "rows_old": 3,
+      "rows_new": 3
+    },
+    {
+      "instruction": "Name the three most used cells of IMSI 260000000000001.",
+      "old": "SELECT cell_lac_tac, cell_ci, COUNT(*) AS n FROM response_records WHERE imsi='260000000000001' AND cell_ci IS NOT NULL AND source_file='ETSI-Testdaten-Dresden' GROUP BY cell_lac_tac, cell_ci ORDER BY n DESC LIMIT 3;",
+      "new": "SELECT cell_lac_tac, cell_ci, COUNT(*) AS n FROM response_records WHERE imsi='260000000000001' AND cell_ci IS NOT NULL GROUP BY cell_lac_tac, cell_ci ORDER BY n DESC LIMIT 3;",
+      "rows_old": 3,
+      "rows_new": 3
+    },
+    {
+      "instruction": "IMSI 260000000000003: die drei häufigsten Zellen (cell_lac_tac/cell_ci)?",
+      "old": "SELECT cell_lac_tac, cell_ci, COUNT(*) AS n FROM response_records WHERE imsi='260000000000003' AND cell_ci IS NOT NULL AND source_file='ETSI-Testdaten-45' GROUP BY cell_lac_tac, cell_ci ORDER BY n DESC LIMIT 3;",
+      "new": "SELECT cell_lac_tac, cell_ci, COUNT(*) AS n FROM response_records WHERE imsi='260000000000003' AND cell_ci IS NOT NULL GROUP BY cell_lac_tac, cell_ci ORDER BY n DESC LIMIT 3;",
+      "rows_old": 3,
+      "rows_new": 3
+    },
+    {
+      "instruction": "Welche drei Funkzellen hat die IMSI 260000000000003 am häufigsten genutzt?",
+      "old": "SELECT cell_lac_tac, cell_ci, COUNT(*) AS n FROM response_records WHERE imsi='260000000000003' AND cell_ci IS NOT NULL AND source_file='ETSI-Testdaten-45' GROUP BY cell_lac_tac, cell_ci ORDER BY n DESC LIMIT 3;",
+      "new": "SELECT cell_lac_tac, cell_ci, COUNT(*) AS n FROM response_records WHERE imsi='260000000000003' AND cell_ci IS NOT NULL GROUP BY cell_lac_tac, cell_ci ORDER BY n DESC LIMIT 3;",
+      "rows_old": 3,
+      "rows_new": 3
+    },
+    {
+      "instruction": "Which three cells did IMSI 260000000000003 use most often?",
+      "old": "SELECT cell_lac_tac, cell_ci, COUNT(*) AS n FROM response_records WHERE imsi='260000000000003' AND cell_ci IS NOT NULL AND source_file='ETSI-Testdaten-45' GROUP BY cell_lac_tac, cell_ci ORDER BY n DESC LIMIT 3;",
+      "new": "SELECT cell_lac_tac, cell_ci, COUNT(*) AS n FROM response_records WHERE imsi='260000000000003' AND cell_ci IS NOT NULL GROUP BY cell_lac_tac, cell_ci ORDER BY n DESC LIMIT 3;",
+      "rows_old": 3,
+      "rows_new": 3
+    },
+    {
+      "instruction": "Name the three most used cells of IMSI 260000000000003.",
+      "old": "SELECT cell_lac_tac, cell_ci, COUNT(*) AS n FROM response_records WHERE imsi='260000000000003' AND cell_ci IS NOT NULL AND source_file='ETSI-Testdaten-45' GROUP BY cell_lac_tac, cell_ci ORDER BY n DESC LIMIT 3;",
+      "new": "SELECT cell_lac_tac, cell_ci, COUNT(*) AS n FROM response_records WHERE imsi='260000000000003' AND cell_ci IS NOT NULL GROUP BY cell_lac_tac, cell_ci ORDER BY n DESC LIMIT 3;",
+      "rows_old": 3,
+      "rows_new": 3
+    },
+    {
+      "instruction": "Welche Zelle steht bei IMSI 260000000000009 nach Anzahl der Datensätze auf Platz 2?",
+      "old": "SELECT cell_lac_tac, cell_ci, COUNT(*) AS n FROM response_records WHERE imsi='260000000000009' AND cell_ci IS NOT NULL AND source_file='ETSI-Testdaten-Dresden' GROUP BY cell_lac_tac, cell_ci ORDER BY n DESC LIMIT 1 OFFSET 1;",
+      "new": "SELECT cell_lac_tac, cell_ci, COUNT(*) AS n FROM response_records WHERE imsi='260000000000009' AND cell_ci IS NOT NULL GROUP BY cell_lac_tac, cell_ci ORDER BY n DESC LIMIT 1 OFFSET 1;",
+      "rows_old": 1,
+      "rows_new": 1
+    },
+    {
+      "instruction": "Nenne die zweitmeistgenutzte Funkzelle von IMSI 260000000000009.",
+      "old": "SELECT cell_lac_tac, cell_ci, COUNT(*) AS n FROM response_records WHERE imsi='260000000000009' AND cell_ci IS NOT NULL AND source_file='ETSI-Testdaten-Dresden' GROUP BY cell_lac_tac, cell_ci ORDER BY n DESC LIMIT 1 OFFSET 1;",
+      "new": "SELECT cell_lac_tac, cell_ci, COUNT(*) AS n FROM response_records WHERE imsi='260000000000009' AND cell_ci IS NOT NULL GROUP BY cell_lac_tac, cell_ci ORDER BY n DESC LIMIT 1 OFFSET 1;",
+      "rows_old": 1,
+      "rows_new": 1
+    },
+    {
+      "instruction": "Name the second most used cell of IMSI 260000000000009.",
+      "old": "SELECT cell_lac_tac, cell_ci, COUNT(*) AS n FROM response_records WHERE imsi='260000000000009' AND cell_ci IS NOT NULL AND source_file='ETSI-Testdaten-Dresden' GROUP BY cell_lac_tac, cell_ci ORDER BY n DESC LIMIT 1 OFFSET 1;",
+      "new": "SELECT cell_lac_tac, cell_ci, COUNT(*) AS n FROM response_records WHERE imsi='260000000000009' AND cell_ci IS NOT NULL GROUP BY cell_lac_tac, cell_ci ORDER BY n DESC LIMIT 1 OFFSET 1;",
+      "rows_old": 1,
+      "rows_new": 1
+    },
+    {
+      "instruction": "Which cell did IMSI 260000000000009 use second most often?",
+      "old": "SELECT cell_lac_tac, cell_ci, COUNT(*) AS n FROM response_records WHERE imsi='260000000000009' AND cell_ci IS NOT NULL AND source_file='ETSI-Testdaten-Dresden' GROUP BY cell_lac_tac, cell_ci ORDER BY n DESC LIMIT 1 OFFSET 1;",
+      "new": "SELECT cell_lac_tac, cell_ci, COUNT(*) AS n FROM response_records WHERE imsi='260000000000009' AND cell_ci IS NOT NULL GROUP BY cell_lac_tac, cell_ci ORDER BY n DESC LIMIT 1 OFFSET 1;",
+      "rows_old": 1,
+      "rows_new": 1
+    },
+    {
+      "instruction": "IMSI 260000000000001: die zweithäufigste Zelle (cell_lac_tac/cell_ci)?",
+      "old": "SELECT cell_lac_tac, cell_ci, COUNT(*) AS n FROM response_records WHERE imsi='260000000000001' AND cell_ci IS NOT NULL AND source_file='ETSI-Testdaten-Dresden' GROUP BY cell_lac_tac, cell_ci ORDER BY n DESC LIMIT 1 OFFSET 1;",
+      "new": "SELECT cell_lac_tac, cell_ci, COUNT(*) AS n FROM response_records WHERE imsi='260000000000001' AND cell_ci IS NOT NULL GROUP BY cell_lac_tac, cell_ci ORDER BY n DESC LIMIT 1 OFFSET 1;",
+      "rows_old": 1,
+      "rows_new": 1
+    },
+    {
+      "instruction": "Welche Funkzelle hat die IMSI 260000000000001 am zweithäufigsten genutzt?",
+      "old": "SELECT cell_lac_tac, cell_ci, COUNT(*) AS n FROM response_records WHERE imsi='260000000000001' AND cell_ci IS NOT NULL AND source_file='ETSI-Testdaten-Dresden' GROUP BY cell_lac_tac, cell_ci ORDER BY n DESC LIMIT 1 OFFSET 1;",
+      "new": "SELECT cell_lac_tac, cell_ci, COUNT(*) AS n FROM response_records WHERE imsi='260000000000001' AND cell_ci IS NOT NULL GROUP BY cell_lac_tac, cell_ci ORDER BY n DESC LIMIT 1 OFFSET 1;",
+      "rows_old": 1,
+      "rows_new": 1
+    },
+    {
+      "instruction": "Which cell did IMSI 260000000000001 use second most often?",
+      "old": "SELECT cell_lac_tac, cell_ci, COUNT(*) AS n FROM response_records WHERE imsi='260000000000001' AND cell_ci IS NOT NULL AND source_file='ETSI-Testdaten-Dresden' GROUP BY cell_lac_tac, cell_ci ORDER BY n DESC LIMIT 1 OFFSET 1;",
+      "new": "SELECT cell_lac_tac, cell_ci, COUNT(*) AS n FROM response_records WHERE imsi='260000000000001' AND cell_ci IS NOT NULL GROUP BY cell_lac_tac, cell_ci ORDER BY n DESC LIMIT 1 OFFSET 1;",
+      "rows_old": 1,
+      "rows_new": 1
+    },
+    {
+      "instruction": "IMSI 260000000000001: the second most frequent cell (cell_lac_tac/cell_ci)?",
+      "old": "SELECT cell_lac_tac, cell_ci, COUNT(*) AS n FROM response_records WHERE imsi='260000000000001' AND cell_ci IS NOT NULL AND source_file='ETSI-Testdaten-Dresden' GROUP BY cell_lac_tac, cell_ci ORDER BY n DESC LIMIT 1 OFFSET 1;",
+      "new": "SELECT cell_lac_tac, cell_ci, COUNT(*) AS n FROM response_records WHERE imsi='260000000000001' AND cell_ci IS NOT NULL GROUP BY cell_lac_tac, cell_ci ORDER BY n DESC LIMIT 1 OFFSET 1;",
+      "rows_old": 1,
+      "rows_new": 1
+    }
+  ]
+}

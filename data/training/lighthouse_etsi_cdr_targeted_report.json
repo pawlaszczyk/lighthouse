@@ -1,0 +1,261 @@
+{
+  "families": {
+    "T1_type_after_hour": {
+      "skill": "TIME",
+      "split": "train",
+      "questions": 5,
+      "tries": 5,
+      "max_sim_to_holdout": 0.602
+    },
+    "T2_msisdn_before_time": {
+      "skill": "TIME",
+      "split": "train",
+      "questions": 5,
+      "tries": 6,
+      "max_sim_to_holdout": 0.576
+    },
+    "T3_active_between_hours": {
+      "skill": "TIME",
+      "split": "train",
+      "questions": 5,
+      "tries": 7,
+      "max_sim_to_holdout": 0.672
+    },
+    "T4_evening_from_hour": {
+      "skill": "TIME",
+      "split": "holdout_v2",
+      "questions": 3,
+      "tries": 3,
+      "max_sim_to_holdout": 0.596
+    },
+    "D1_calls_day_window": {
+      "skill": "DATETIME",
+      "split": "train",
+      "questions": 5,
+      "tries": 9,
+      "max_sim_to_holdout": 0.677
+    },
+    "D2_sms_sent_on_day": {
+      "skill": "DATETIME",
+      "split": "train",
+      "questions": 5,
+      "tries": 5,
+      "max_sim_to_holdout": 0.695
+    },
+    "D3_numbers_at_timestamp": {
+      "skill": "DATETIME",
+      "split": "train",
+      "questions": 5,
+      "tries": 6,
+      "max_sim_to_holdout": 0.719
+    },
+    "D4_msisdn_day_after_hour": {
+      "skill": "DATETIME",
+      "split": "holdout_v2",
+      "questions": 3,
+      "tries": 14,
+      "max_sim_to_holdout": 0.452
+    },
+    "R1_msisdn_rank_by_type": {
+      "skill": "RANK",
+      "split": "train",
+      "questions": 4,
+      "tries": 400,
+      "max_sim_to_holdout": 0.701
+    },
+    "R2_cell_rank_by_source": {
+      "skill": "RANK",
+      "split": "train",
+      "questions": 5,
+      "tries": 9,
+      "max_sim_to_holdout": 0.816
+    },
+    "R3_imsi_rank_gprs": {
+      "skill": "RANK",
+      "split": "train",
+      "questions": 2,
+      "tries": 400,
+      "max_sim_to_holdout": 0.612
+    },
+    "R5_msisdn_rank_duration": {
+      "skill": "RANK",
+      "split": "train",
+      "questions": 5,
+      "tries": 11,
+      "max_sim_to_holdout": 0.634
+    },
+    "R6_cell_rank_by_type": {
+      "skill": "RANK",
+      "split": "train",
+      "questions": 5,
+      "tries": 8,
+      "max_sim_to_holdout": 0.624
+    },
+    "R4_day_rank": {
+      "skill": "RANK",
+      "split": "holdout_v2",
+      "questions": 3,
+      "tries": 6,
+      "max_sim_to_holdout": 0.52
+    },
+    "P1_phoned_with": {
+      "skill": "PARTNER",
+      "split": "train",
+      "questions": 5,
+      "tries": 5,
+      "max_sim_to_holdout": 0.626
+    },
+    "P2_called_whom": {
+      "skill": "PARTNER",
+      "split": "train",
+      "questions": 5,
+      "tries": 5,
+      "max_sim_to_holdout": 0.452
+    },
+    "P3_sms_from": {
+      "skill": "PARTNER",
+      "split": "train",
+      "questions": 5,
+      "tries": 5,
+      "max_sim_to_holdout": 0.574
+    },
+    "P4_count_contacts": {
+      "skill": "PARTNER",
+      "split": "train",
+      "questions": 5,
+      "tries": 5,
+      "max_sim_to_holdout": 0.5
+    },
+    "P5_when_pair_called": {
+      "skill": "PARTNER",
+      "split": "holdout_v2",
+      "questions": 3,
+      "tries": 3,
+      "max_sim_to_holdout": 0.549
+    },
+    "G1_longest_pause_when": {
+      "skill": "GAP",
+      "split": "train",
+      "questions": 5,
+      "tries": 5,
+      "max_sim_to_holdout": 0.455
+    },
+    "G2_count_pauses_over_hours": {
+      "skill": "GAP",
+      "split": "train",
+      "questions": 5,
+      "tries": 7,
+      "max_sim_to_holdout": 0.581
+    },
+    "G3_avg_gap_minutes": {
+      "skill": "GAP",
+      "split": "train",
+      "questions": 5,
+      "tries": 5,
+      "max_sim_to_holdout": 0.693
+    },
+    "G4_list_gaps_over_minutes": {
+      "skill": "GAP",
+      "split": "holdout_v2",
+      "questions": 3,
+      "tries": 3,
+      "max_sim_to_holdout": 0.576
+    },
+    "Y1_count_active_days": {
+      "skill": "DAYS",
+      "split": "train",
+      "questions": 5,
+      "tries": 6,
+      "max_sim_to_holdout": 0.475
+    },
+    "Y2_numbers_min_days": {
+      "skill": "DAYS",
+      "split": "train",
+      "questions": 5,
+      "tries": 11,
+      "max_sim_to_holdout": 0.619
+    },
+    "Y3_records_per_day": {
+      "skill": "DAYS",
+      "split": "train",
+      "questions": 5,
+      "tries": 10,
+      "max_sim_to_holdout": 0.659
+    },
+    "Y4_days_with_gprs": {
+      "skill": "DAYS",
+      "split": "holdout_v2",
+      "questions": 3,
+      "tries": 3,
+      "max_sim_to_holdout": 0.455
+    },
+    "C1_distinct_numbers_source": {
+      "skill": "COUNT",
+      "split": "train",
+      "questions": 5,
+      "tries": 13,
+      "max_sim_to_holdout": 0.611
+    },
+    "C2_distinct_cells_imsi": {
+      "skill": "COUNT",
+      "split": "train",
+      "questions": 4,
+      "tries": 400,
+      "max_sim_to_holdout": 0.679
+    },
+    "C3_numbers_over_n_records": {
+      "skill": "COUNT",
+      "split": "train",
+      "questions": 5,
+      "tries": 13,
+      "max_sim_to_holdout": 0.627
+    },
+    "C4_devices_per_msisdn": {
+      "skill": "COUNT",
+      "split": "holdout_v2",
+      "questions": 3,
+      "tries": 3,
+      "max_sim_to_holdout": 0.569
+    }
+  },
+  "rejected": {
+    "empty_or_zero": 65,
+    "duplicate": 508,
+    "rank_tie": 682
+  },
+  "counts": {
+    "train": 230,
+    "holdout_v2": 42
+  },
+  "by_skill": {
+    "train": {
+      "TIME": 30,
+      "DATETIME": 30,
+      "RANK": 42,
+      "PARTNER": 40,
+      "GAP": 30,
+      "DAYS": 30,
+      "COUNT": 28
+    },
+    "holdout_v2": {
+      "TIME": 6,
+      "DATETIME": 6,
+      "RANK": 6,
+      "PARTNER": 6,
+      "GAP": 6,
+      "DAYS": 6,
+      "COUNT": 6
+    }
+  },
+  "blocked_ids_from_holdout": [
+    "260000000000001",
+    "260000000000012",
+    "491700000005",
+    "491700000006",
+    "491700000007",
+    "491700000008",
+    "491700000012",
+    "491700000216",
+    "491700000219"
+  ]
+}

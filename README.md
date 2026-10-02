@@ -28,17 +28,14 @@ Lighthouse imports ETSI-compliant retained-data exports into a queryable databas
 Lighthouse is installed together with FQLite; there is no separate installer. The table below is updated automatically whenever a new FQLite release appears.
 
 <!-- LATEST-RELEASE:START -->
-**Latest FQLite release: [4.22](https://github.com/pawlaszczyk/fqlite/releases/tag/4.22)** (published 2026-06-03)
-
-> [!NOTE]
-> Lighthouse is part of FQLite **5.0 and later**. Release 4.22 does not contain it yet. Until 5.0 is released, build FQLite from the `master` branch (see [Getting started](docs/getting-started.md#build-from-source)).
+**Latest FQLite release: [5.0](https://github.com/pawlaszczyk/fqlite/releases/tag/5.0)** (published 2026-10-01)
 
 | Platform | File | Size |
 |---|---|---|
-| macOS (Apple Silicon) | [fqlite-4.22-macOS-arm64.dmg](https://github.com/pawlaszczyk/fqlite/releases/download/4.22/fqlite-4.22-macOS-arm64.dmg) | 421.3 MB |
-| macOS (Intel) | [fqlite-4.22-macOS-x86_64.dmg](https://github.com/pawlaszczyk/fqlite/releases/download/4.22/fqlite-4.22-macOS-x86_64.dmg) | 425.0 MB |
-| Windows | [fqlite-4.22-windows.exe](https://github.com/pawlaszczyk/fqlite/releases/download/4.22/fqlite-4.22-windows.exe) | 419.0 MB |
-| Linux (Debian/Ubuntu, .deb) | [fqlite-4.22-x86_64.deb](https://github.com/pawlaszczyk/fqlite/releases/download/4.22/fqlite-4.22-x86_64.deb) | 424.0 MB |
+| macOS (Apple Silicon) | [fqlite-5.0-macOS-arm64.dmg](https://github.com/pawlaszczyk/fqlite/releases/download/5.0/fqlite-5.0-macOS-arm64.dmg) | 424.4 MB |
+| macOS (Intel) | [fqlite-5.0-macOS-x86_64.dmg](https://github.com/pawlaszczyk/fqlite/releases/download/5.0/fqlite-5.0-macOS-x86_64.dmg) | 428.2 MB |
+| Windows | [fqlite-5.0-windows.exe](https://github.com/pawlaszczyk/fqlite/releases/download/5.0/fqlite-5.0-windows.exe) | 421.8 MB |
+| Linux (Debian/Ubuntu, .deb) | [fqlite-5.0-x86_64.deb](https://github.com/pawlaszczyk/fqlite/releases/download/5.0/fqlite-5.0-x86_64.deb) | 426.7 MB |
 
 All releases and release notes: <https://github.com/pawlaszczyk/fqlite/releases>
 <!-- LATEST-RELEASE:END -->

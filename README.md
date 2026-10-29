@@ -123,7 +123,7 @@ In short: the import is reliable, and after corrections it is robust against mal
 
 If you use Lighthouse, please cite the article (details will be added on publication) and FQLite. [`CITATION.cff`](CITATION.cff) provides the metadata; GitHub shows it under *Cite this repository*.
 
-> D. Pawlaszczyk, D. Labudde, C. Hummert, R. Bodach, P. Engler, J. Kolouch, M. Spranger: *AI-Assisted Cell Site Analysis: An Open Source Solution for Forensic Investigation of Call Detail Records.* Submitted to Science & Justice.
+> D. Pawlaszczyk, D. Labudde, C. Hummert, R. Bodach, P. Engler, J. Kolouch, M. Spranger: *AI-Assisted Cell Site Analysis: An Open Source Solution for Forensic Investigation of Call Detail Records.* Submitted to Forensic Science International: Digital Investigation.
 
 ## License
 

@@ -28,14 +28,15 @@ Lighthouse imports ETSI-compliant retained-data exports into a queryable databas
 Lighthouse is installed together with FQLite; there is no separate installer. The table below is updated automatically whenever a new FQLite release appears.
 
 <!-- LATEST-RELEASE:START -->
-**Latest FQLite release: [5.0](https://github.com/pawlaszczyk/fqlite/releases/tag/5.0)** (published 2026-10-01)
+**Latest FQLite release: [5.1](https://github.com/pawlaszczyk/fqlite/releases/tag/5.1)** (published 2026-11-01)
 
 | Platform | File | Size |
 |---|---|---|
-| macOS (Apple Silicon) | [fqlite-5.0-macOS-arm64.dmg](https://github.com/pawlaszczyk/fqlite/releases/download/5.0/fqlite-5.0-macOS-arm64.dmg) | 424.4 MB |
-| macOS (Intel) | [fqlite-5.0-macOS-x86_64.dmg](https://github.com/pawlaszczyk/fqlite/releases/download/5.0/fqlite-5.0-macOS-x86_64.dmg) | 428.2 MB |
-| Windows | [fqlite-5.0-windows.exe](https://github.com/pawlaszczyk/fqlite/releases/download/5.0/fqlite-5.0-windows.exe) | 421.8 MB |
-| Linux (Debian/Ubuntu, .deb) | [fqlite-5.0-x86_64.deb](https://github.com/pawlaszczyk/fqlite/releases/download/5.0/fqlite-5.0-x86_64.deb) | 426.7 MB |
+| macOS (Apple Silicon) | [fqlite-5.1-macOS-arm64.dmg](https://github.com/pawlaszczyk/fqlite/releases/download/5.1/fqlite-5.1-macOS-arm64.dmg) | 423.6 MB |
+| macOS (Intel) | [fqlite-5.1-macOS-x86_64.dmg](https://github.com/pawlaszczyk/fqlite/releases/download/5.1/fqlite-5.1-macOS-x86_64.dmg) | 428.5 MB |
+| Windows | [fqlite-5.1-windows.exe](https://github.com/pawlaszczyk/fqlite/releases/download/5.1/fqlite-5.1-windows.exe) | 422.2 MB |
+| Linux (Debian/Ubuntu, .deb) | [fqlite-5.1-x86_64.deb](https://github.com/pawlaszczyk/fqlite/releases/download/5.1/fqlite-5.1-x86_64.deb) | 426.8 MB |
+| Linux (Fedora/RHEL, .rpm) | [fqlite-5.1-x86_64.rpm](https://github.com/pawlaszczyk/fqlite/releases/download/5.1/fqlite-5.1-x86_64.rpm) | 426.9 MB |
 
 All releases and release notes: <https://github.com/pawlaszczyk/fqlite/releases>
 <!-- LATEST-RELEASE:END -->

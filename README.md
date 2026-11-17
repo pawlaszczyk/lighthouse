@@ -32,11 +32,11 @@ Lighthouse is installed together with FQLite; there is no separate installer. Th
 
 | Platform | File | Size |
 |---|---|---|
-| macOS (Apple Silicon) | [fqlite-5.21-macOS-arm64.dmg](https://github.com/pawlaszczyk/fqlite/releases/download/5.21/fqlite-5.21-macOS-arm64.dmg) | 420.1 MB |
-| macOS (Intel) | [fqlite-5.21-macOS-x86_64.dmg](https://github.com/pawlaszczyk/fqlite/releases/download/5.21/fqlite-5.21-macOS-x86_64.dmg) | 425.0 MB |
-| Windows | [fqlite-5.21-windows.exe](https://github.com/pawlaszczyk/fqlite/releases/download/5.21/fqlite-5.21-windows.exe) | 418.4 MB |
-| Linux (Debian/Ubuntu, .deb) | [fqlite-5.21-x86_64.deb](https://github.com/pawlaszczyk/fqlite/releases/download/5.21/fqlite-5.21-x86_64.deb) | 422.9 MB |
-| Linux (Fedora/RHEL, .rpm) | [fqlite-5.21-x86_64.rpm](https://github.com/pawlaszczyk/fqlite/releases/download/5.21/fqlite-5.21-x86_64.rpm) | 422.9 MB |
+| macOS (Apple Silicon) | [fqlite-5.21-macOS-arm64.dmg](https://github.com/pawlaszczyk/fqlite/releases/download/5.21/fqlite-5.21-macOS-arm64.dmg) | 422.4 MB |
+| macOS (Intel) | [fqlite-5.21-macOS-x86_64.dmg](https://github.com/pawlaszczyk/fqlite/releases/download/5.21/fqlite-5.21-macOS-x86_64.dmg) | 426.9 MB |
+| Windows | [fqlite-5.21-windows.exe](https://github.com/pawlaszczyk/fqlite/releases/download/5.21/fqlite-5.21-windows.exe) | 419.5 MB |
+| Linux (Debian/Ubuntu, .deb) | [fqlite-5.21-x86_64.deb](https://github.com/pawlaszczyk/fqlite/releases/download/5.21/fqlite-5.21-x86_64.deb) | 423.9 MB |
+| Linux (Fedora/RHEL, .rpm) | [fqlite-5.21-x86_64.rpm](https://github.com/pawlaszczyk/fqlite/releases/download/5.21/fqlite-5.21-x86_64.rpm) | 424.0 MB |
 
 All releases and release notes: <https://github.com/pawlaszczyk/fqlite/releases>
 <!-- LATEST-RELEASE:END -->

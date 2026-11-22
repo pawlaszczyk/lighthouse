@@ -28,15 +28,15 @@ Lighthouse imports ETSI-compliant retained-data exports into a queryable databas
 Lighthouse is installed together with FQLite; there is no separate installer. The table below is updated automatically whenever a new FQLite release appears.
 
 <!-- LATEST-RELEASE:START -->
-**Latest FQLite release: [5.21](https://github.com/pawlaszczyk/fqlite/releases/tag/5.21)** (published 2026-11-16)
+**Latest FQLite release: [5.3](https://github.com/pawlaszczyk/fqlite/releases/tag/5.3)** (published 2026-11-22)
 
 | Platform | File | Size |
 |---|---|---|
-| macOS (Apple Silicon) | [fqlite-5.21-macOS-arm64.dmg](https://github.com/pawlaszczyk/fqlite/releases/download/5.21/fqlite-5.21-macOS-arm64.dmg) | 422.4 MB |
-| macOS (Intel) | [fqlite-5.21-macOS-x86_64.dmg](https://github.com/pawlaszczyk/fqlite/releases/download/5.21/fqlite-5.21-macOS-x86_64.dmg) | 426.9 MB |
-| Windows | [fqlite-5.21-windows.exe](https://github.com/pawlaszczyk/fqlite/releases/download/5.21/fqlite-5.21-windows.exe) | 419.5 MB |
-| Linux (Debian/Ubuntu, .deb) | [fqlite-5.21-x86_64.deb](https://github.com/pawlaszczyk/fqlite/releases/download/5.21/fqlite-5.21-x86_64.deb) | 423.9 MB |
-| Linux (Fedora/RHEL, .rpm) | [fqlite-5.21-x86_64.rpm](https://github.com/pawlaszczyk/fqlite/releases/download/5.21/fqlite-5.21-x86_64.rpm) | 424.0 MB |
+| macOS (Apple Silicon) | [fqlite-5.3-macOS-arm64.dmg](https://github.com/pawlaszczyk/fqlite/releases/download/5.3/fqlite-5.3-macOS-arm64.dmg) | 422.1 MB |
+| macOS (Intel) | [fqlite-5.3-macOS-x86_64.dmg](https://github.com/pawlaszczyk/fqlite/releases/download/5.3/fqlite-5.3-macOS-x86_64.dmg) | 426.3 MB |
+| Windows | [fqlite-5.3-windows.exe](https://github.com/pawlaszczyk/fqlite/releases/download/5.3/fqlite-5.3-windows.exe) | 419.5 MB |
+| Linux (Debian/Ubuntu, .deb) | [fqlite-5.3-x86_64.deb](https://github.com/pawlaszczyk/fqlite/releases/download/5.3/fqlite-5.3-x86_64.deb) | 424.3 MB |
+| Linux (Fedora/RHEL, .rpm) | [fqlite-5.3-x86_64.rpm](https://github.com/pawlaszczyk/fqlite/releases/download/5.3/fqlite-5.3-x86_64.rpm) | 424.3 MB |
 
 All releases and release notes: <https://github.com/pawlaszczyk/fqlite/releases>
 <!-- LATEST-RELEASE:END -->

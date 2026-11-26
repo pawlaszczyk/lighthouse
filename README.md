@@ -28,15 +28,18 @@ Lighthouse imports ETSI-compliant retained-data exports into a queryable databas
 Lighthouse is installed together with FQLite; there is no separate installer. The table below is updated automatically whenever a new FQLite release appears.
 
 <!-- LATEST-RELEASE:START -->
-**Latest FQLite release: [5.3](https://github.com/pawlaszczyk/fqlite/releases/tag/5.3)** (published 2026-11-22)
+**Latest FQLite release: [5.4](https://github.com/pawlaszczyk/fqlite/releases/tag/5.4)** (published 2026-11-26)
 
 | Platform | File | Size |
 |---|---|---|
-| macOS (Apple Silicon) | [fqlite-5.3-macOS-arm64.dmg](https://github.com/pawlaszczyk/fqlite/releases/download/5.3/fqlite-5.3-macOS-arm64.dmg) | 422.1 MB |
-| macOS (Intel) | [fqlite-5.3-macOS-x86_64.dmg](https://github.com/pawlaszczyk/fqlite/releases/download/5.3/fqlite-5.3-macOS-x86_64.dmg) | 426.3 MB |
-| Windows | [fqlite-5.3-windows.exe](https://github.com/pawlaszczyk/fqlite/releases/download/5.3/fqlite-5.3-windows.exe) | 419.5 MB |
-| Linux (Debian/Ubuntu, .deb) | [fqlite-5.3-x86_64.deb](https://github.com/pawlaszczyk/fqlite/releases/download/5.3/fqlite-5.3-x86_64.deb) | 424.3 MB |
-| Linux (Fedora/RHEL, .rpm) | [fqlite-5.3-x86_64.rpm](https://github.com/pawlaszczyk/fqlite/releases/download/5.3/fqlite-5.3-x86_64.rpm) | 424.3 MB |
+| macOS (Apple Silicon) | [fqlite-5.4-macOS-arm64.dmg](https://github.com/pawlaszczyk/fqlite/releases/download/5.4/fqlite-5.4-macOS-arm64.dmg) | 422.1 MB |
+| macOS (Intel) | [fqlite-5.4-macOS-x86_64.dmg](https://github.com/pawlaszczyk/fqlite/releases/download/5.4/fqlite-5.4-macOS-x86_64.dmg) | 426.6 MB |
+| Windows | [fqlite-5.4-windows.exe](https://github.com/pawlaszczyk/fqlite/releases/download/5.4/fqlite-5.4-windows.exe) | 419.5 MB |
+| Linux (Debian/Ubuntu, .deb) | [fqlite-5.4-x86_64.deb](https://github.com/pawlaszczyk/fqlite/releases/download/5.4/fqlite-5.4-x86_64.deb) | 424.3 MB |
+| Linux (Fedora/RHEL, .rpm) | [fqlite-5.4-x86_64.rpm](https://github.com/pawlaszczyk/fqlite/releases/download/5.4/fqlite-5.4-x86_64.rpm) | 424.3 MB |
+| Java (all platforms) | [fqlite-headless-5.4.jar](https://github.com/pawlaszczyk/fqlite/releases/download/5.4/fqlite-headless-5.4.jar) | 1.8 MB |
+| Java (all platforms) | [fqlite-mcp-0.1.0.jar](https://github.com/pawlaszczyk/fqlite/releases/download/5.4/fqlite-mcp-0.1.0.jar) | 3.2 MB |
+| Other | [fqlite-headless-5.4.zip](https://github.com/pawlaszczyk/fqlite/releases/download/5.4/fqlite-headless-5.4.zip) | 2.7 MB |
 
 All releases and release notes: <https://github.com/pawlaszczyk/fqlite/releases>
 <!-- LATEST-RELEASE:END -->
